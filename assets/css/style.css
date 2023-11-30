@@ -7,6 +7,7 @@ body {
   background-color: white;
   max-width: 80%;
   height: 100vh;
+  border-radius: 15px;
 }
 
 #club-logo {
@@ -15,5 +16,16 @@ body {
 
 #header {
   display: flex;
-  justify-content: center; /* Center horizontally */
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+#content {
+  border: 3px solid red;
+}
+
+h1 {
+  letter-spacing: 0.5rem;
+  font-size: 300%;
 }
