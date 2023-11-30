@@ -8,3 +8,12 @@ body {
   max-width: 80%;
   height: 100vh;
 }
+
+#club-logo {
+  width: 150px;
+}
+
+#header {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+}
