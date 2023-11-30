@@ -28,6 +28,6 @@ body {
 }
 
 h1 {
-  letter-spacing: 0.5rem;
   font-size: 300%;
+  margin: 0;
 }
