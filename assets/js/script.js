@@ -1,4 +1,13 @@
 function validateForm() {
+  const emailInput = document.getElementById("email");
+      const email = emailInput.value;
+      const emailFormat = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      
+      if (!email.match(emailFormat)) {
+        alert("Please enter a valid email address");
+        return false;
+      }
+
   const radioButtons = document.getElementsByName("feedbackType");
   let radioSelected = false;
   console.log("test")
