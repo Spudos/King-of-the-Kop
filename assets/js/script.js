@@ -77,6 +77,16 @@ return false;
 }
 
 // **** Quiz ****
+
+// Add event listener to the start quiz button
+document.getElementById('startQuizBtn').addEventListener('click', function() {
+  // Display the first question
+  displayQuestion(currentQuestionIndex);
+  // Remove the start quiz button
+  this.style.display = 'none';
+  document.querySelector('.quiz-container').style.display = 'block';
+});
+
 let homeScore = 0;
 let awayScore = 0;
 

@@ -172,3 +172,13 @@ form {
   padding: 20px;
   max-width: 250px;
 }
+
+#startQuizBtn {
+  width: 50%;
+  margin: auto;
+}
+button {
+  background-color: darkred;
+  color: #f0f0f0;
+  border-radius: 10px;
+}
