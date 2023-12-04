@@ -110,3 +110,12 @@ form {
   display: inline-block;
   text-align: left;
 }
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.radio-group label {
+  margin-right: 10px;
+}
