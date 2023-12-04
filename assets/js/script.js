@@ -74,3 +74,4 @@ document.getElementById("content").innerHTML = summaryTemplate;
 return false; 
 
 }
+

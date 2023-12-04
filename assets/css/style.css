@@ -138,3 +138,28 @@ form {
   margin-right: 10px;
 }
 
+/* quiz page styling */
+.quiz-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.question {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.answers {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.answer-btn {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 15px;
+}
+.answer-btn:hover {
+  background-color: #f0f0f0;
+}
