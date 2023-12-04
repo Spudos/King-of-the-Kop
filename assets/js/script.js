@@ -10,7 +10,10 @@ document.addEventListener("keydown", function(event) {
   }
 });
 
+// perform form validation
 function validateForm() {
+
+  // check a name is submitted
   const nameInput = document.getElementById("name");
   const name = nameInput.value;
   
@@ -19,6 +22,7 @@ function validateForm() {
     return false;
   }
 
+  // check a valid email is submitted
   const emailInput = document.getElementById("email");
   const email = emailInput.value;
   const emailFormat = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -28,6 +32,7 @@ function validateForm() {
     return false;
   }
 
+  // check comments hve been filled in
   const commentsInput = document.getElementById("comments");
   const comments = commentsInput.value;
   
@@ -36,6 +41,7 @@ function validateForm() {
     return false;
   }
 
+  // check a feedback type has been selected
   const radioButtons = document.getElementsByName("feedbackType");
   let radioSelected = false;
   for (let i = 0; i < radioButtons.length; i++) {
@@ -63,6 +69,8 @@ const summaryTemplate = `
 `;
 
 document.getElementById("content").innerHTML = summaryTemplate;
-return false; // Prevent the form from actually submitting
+
+// Prevent the form from actually submitting
+return false; 
 
 }
