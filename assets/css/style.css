@@ -82,6 +82,19 @@ body {
   
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline;
+  margin: 0 10px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 #main {
   margin: auto;
   background-color: white;
@@ -119,3 +132,4 @@ form {
 .radio-group label {
   margin-right: 10px;
 }
+
