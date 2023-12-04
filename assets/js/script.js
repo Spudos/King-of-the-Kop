@@ -75,19 +75,22 @@ return false;
 
 }
 
-// Add event listener to the quiz answer buttons
-const answerButtons = document.querySelectorAll('.answer-btn');
-answerButtons.forEach(button => {
-  button.addEventListener('click', function() {
-    const selectedAnswer = this.textContent;
-    const correctAnswer = "Salah"; // Replace with the correct answer
+let score = 0;
 
-    if (selectedAnswer === correctAnswer) {
-      alert("Goal! Well done!");
-      // Add further actions for a correct answer
-    } else {
-      alert("ooh, off the bar! Please try again.");
-      // Add further actions for an incorrect answer
-    }
-  });
-});
+    const answerButtons = document.querySelectorAll('.answer-btn');
+    answerButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const selectedAnswer = this.textContent;
+        const correctAnswer = "Salah"; // Replace with the correct answer
+
+        if (selectedAnswer === correctAnswer) {
+          score++;
+          document.getElementById('scoreDisplay').textContent = score;
+          alert("Correct answer! Well done! Your score is now: " + score);
+          // Add further actions for a correct answer
+        } else {
+          alert("Incorrect answer. Please try again.");
+          // Add further actions for an incorrect answer
+        }
+      });
+    });
