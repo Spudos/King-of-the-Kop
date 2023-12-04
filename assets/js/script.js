@@ -1,3 +1,4 @@
+// **** Feedback From ****
 // Add focus to the name field on page load
 window.onload = function() {
   document.getElementById("name").focus();
@@ -75,7 +76,9 @@ return false;
 
 }
 
-let score = 0;
+// **** Quiz ****
+let homeScore = 0;
+let awayScore = 0;
 
 const questions = [
   {
@@ -188,10 +191,12 @@ answerButtons.forEach(button => {
     const correctAnswer = questions[currentQuestionIndex].answer;
 
     if (selectedAnswer === correctAnswer) {
-      score++;
-      document.getElementById('scoreDisplay').textContent = score;
+      homeScore++;
+      document.getElementById('homeScoreDisplay').textContent = homeScore;
       alert("Scored, marvellous strike!");
     } else {
+      awayScore++;
+      document.getElementById('awayScoreDisplay').textContent = awayScore;
       alert("A miss, Hit the bar!");
     }
 
@@ -200,7 +205,7 @@ answerButtons.forEach(button => {
     if (currentQuestionIndex < questions.length) {
       displayQuestion(currentQuestionIndex);
     } else {
-      alert("Quiz complete! Your final score is: " + score);
+      alert("Thats full time! The final score is: " + homeScore + " - " + awayScore);
       // Add further actions for quiz completion
     }
   });
