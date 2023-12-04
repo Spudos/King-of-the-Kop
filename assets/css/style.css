@@ -159,9 +159,12 @@ form {
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 15px;
+  background-color: darkred;
+  color: #f0f0f0;
 }
 .answer-btn:hover {
   background-color: #f0f0f0;
+  color: darkred;
 }
 
 .image-container {
