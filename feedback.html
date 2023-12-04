@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Titillium+Web:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>King of the Kop</title>
+</head>
+<body>
+
+  <div id="main">
+    
+    <div id="header">
+      <img src="assets/images/Liverpool_FC.svg" alt="Liverpool FC club logo" id="club-logo">
+      <h1>King of the Kop</h1>
+    </div> 
+
+    <div id="content">
+      <h2>Your Feedback</h2>
+      
+      <form action="/submit-feedback" method="post">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div>
+          <p>What would you like to contact us about</p>
+          <input type="radio" id="game" name="feedbackType" value="game">
+          <label for="game">Game</label><br>
+          <input type="radio" id="quiz" name="feedbackType" value="quiz">
+          <label for="quiz">Quiz</label><br>
+          <input type="radio" id="general" name="feedbackType" value="general">
+          <label for="general">General</label>
+        </div>
+        <div>
+          <label for="comments">Comments:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+
+  </div>
+  
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
