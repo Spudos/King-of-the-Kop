@@ -154,25 +154,25 @@ function displayQuestion(index) {
       imageContainer.innerHTML = '<img src="/assets/quiz/image3.jpg" alt="Image 3">';
       break;
     case 3:
-      mageContainer.innerHTML = '<img src="/assets/quiz/image1.svg" alt="Image 4">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image4.jpg" alt="Image 4">';
       break;
     case 4:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image1.svg" alt="Image 5">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image5.jpeg" alt="Image 5">';
       break;
     case 5:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image1.svg" alt="Image 6">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image6.jpg" alt="Image 6">';
       break;
     case 6:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image1.svg" alt="Image 7">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image7.webp" alt="Image 7">';
       break;
     case 7:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image1.svg" alt="Image 8">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image8.jpg" alt="Image 8">';
       break;
     case 8:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image1.svg" alt="Image 9">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image9.jpg" alt="Image 9">';
       break;
     case 9:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image1.svg" alt="Image 10">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image10.jpg" alt="Image 10">';
       break;            
     default:
       imageContainer.innerHTML = ''; // Clear the image container if no specific image is needed
