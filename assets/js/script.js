@@ -1,4 +1,12 @@
 function validateForm() {
+  const nameInput = document.getElementById("name");
+  const name = nameInput.value;
+  
+  if (name.trim() === "") {
+    alert("Please fill in your name");
+    return false;
+  }
+  
   const emailInput = document.getElementById("email");
       const email = emailInput.value;
       const emailFormat = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
