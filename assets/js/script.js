@@ -36,5 +36,21 @@ function validateForm() {
     alert("Please select a feedback type");
     return false;
   }
-  return true;
+
+// Hide the form and show the summary
+document.getElementById("feedbackForm").style.display = "none";
+document.getElementById("content").style.display = "block";
+
+// Display the submitted information in the summary using a template literal
+const summaryTemplate = `
+  <h3>Thank you for your feedback</h3>
+  <p>Name: ${name}</p>
+  <p>Email: ${email}</p>
+  <p>Feedback Type: ${document.querySelector('input[name="feedbackType"]:checked').value}</p>
+  <p>Comments: ${comments}</p>
+`;
+
+document.getElementById("content").innerHTML = summaryTemplate;
+return false; // Prevent the form from actually submitting
+
 }
