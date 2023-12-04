@@ -103,5 +103,10 @@ body {
 
 #content {
   border: 1px solid green;
+  text-align: center;
 }
 
+form {
+  display: inline-block;
+  text-align: left;
+}
