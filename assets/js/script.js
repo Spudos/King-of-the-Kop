@@ -1,3 +1,15 @@
+// Add focus to the name field on page load
+window.onload = function() {
+  document.getElementById("name").focus();
+};
+
+// Make the submit button trigger the form submission when "Enter" is pressed
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    document.getElementById("submitButton").click();
+  }
+});
+
 function validateForm() {
   const nameInput = document.getElementById("name");
   const name = nameInput.value;
