@@ -84,7 +84,7 @@ const questions = [
     answer: "Salah"
   },
   {
-    question: "Who is the club captain?",
+    question: "Who replaced Hendo as the club captain at the start of the season?",
     options: ["Trent", "Van Dijk", "Allison"],
     answer: "Van Dijk"
   },
@@ -145,13 +145,13 @@ function displayQuestion(index) {
   const imageContainer = document.getElementById('imageContainer');
   switch (index) {
     case 0:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image1.svg" alt="Image 1">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image1.jpeg" alt="Image 1">';
       break;
     case 1:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image1.svg" alt="Image 2">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image2.jpg" alt="Image 2">';
       break;
     case 2:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image1.svg" alt="Image 3">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image3.jpg" alt="Image 3">';
       break;
     case 3:
       mageContainer.innerHTML = '<img src="/assets/quiz/image1.svg" alt="Image 4">';

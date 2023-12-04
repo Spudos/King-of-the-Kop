@@ -163,3 +163,9 @@ form {
 .answer-btn:hover {
   background-color: #f0f0f0;
 }
+
+.image-container {
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+}
