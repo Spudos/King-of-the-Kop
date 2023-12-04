@@ -14,7 +14,7 @@ let awayScore = 0;
 const questions = [
   {
     questionNumber: "Question 1",
-    question: "Of the current players at the club, who has the most goals?",
+    question: "Of the current players at the club, who has the most goals for LFC?",
     options: ["Jota", "Salah", "Gomez"],
     answer: "Salah"
   },
@@ -38,7 +38,7 @@ const questions = [
   },
   {
     questionNumber: "Question 5",
-    question: "When Liverpool played against Man utd at Anfield in the 22/23 season, what was the score?",
+    question: "When Liverpool played against Man Utd at Anfield in the 22/23 season, what was the score?",
     options: ["3-0", "7-0", "10-0"],
     answer: "7-0"
   },
@@ -56,7 +56,7 @@ const questions = [
   },
   {
     questionNumber: "Question 8",
-    question: "How many times have Liverpool won Englands top division?",
+    question: "How many times have Liverpool won England's top division?",
     options: ["13", "14", "19"],
     answer: "19"
   },
@@ -140,7 +140,7 @@ answerButtons.forEach(button => {
     } else {
       awayScore++;
       document.getElementById('awayScoreDisplay').textContent = awayScore;
-      alert("A miss, Hit the bar!");
+      alert("A goal for the opposition!");
     }
 
     // Move to the next question
