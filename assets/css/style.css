@@ -138,6 +138,15 @@ form {
   margin-right: 10px;
 }
 
+#ffsubmit {
+  background-color: darkred;
+  color: #f0f0f0;
+  border-radius: 10px;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid darkgreen;
+}
+
 /* quiz page styling */
 .quiz-container {
   max-width: 600px;
@@ -177,10 +186,29 @@ form {
   width: 50%;
   margin: auto;
 }
+
 button {
   background-color: darkred;
   color: #f0f0f0;
+  border: 2px solid darkgreen;
   border-radius: 10px;
   height: 50px;
   padding: 10px;
 }
+
+@font-face {
+  /* from https://www.fontspace.com/category/scoreboard */
+  font-family: 'scoreboard';
+  src: url('/assets/sf-digital-readout-font/SfDigitalReadoutHeavy-AwVg.ttf') format('truetype')
+}
+
+.score {
+  background-color: #000;
+  color: #f0f0f0;
+  font-size: xx-large;
+  width: 50%;
+  margin: auto;
+  border-radius: 10px;
+  font-family: 'scoreboard', sans-serif;
+}
+
