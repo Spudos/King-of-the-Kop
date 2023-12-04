@@ -75,3 +75,19 @@ return false;
 
 }
 
+// Add event listener to the quiz answer buttons
+const answerButtons = document.querySelectorAll('.answer-btn');
+answerButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    const selectedAnswer = this.textContent;
+    const correctAnswer = "Salah"; // Replace with the correct answer
+
+    if (selectedAnswer === correctAnswer) {
+      alert("Goal! Well done!");
+      // Add further actions for a correct answer
+    } else {
+      alert("ooh, off the bar! Please try again.");
+      // Add further actions for an incorrect answer
+    }
+  });
+});
