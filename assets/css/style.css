@@ -181,8 +181,11 @@ form {
 .image-container {
   margin: auto;
   padding: 20px;
-  max-width: 250px;
-  max-height: 250px;
+}
+
+.quizpic {
+  margin: auto;
+  max-height: 100px;
 }
 
 #startQuizBtn {
