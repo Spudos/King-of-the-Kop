@@ -1,3 +1,8 @@
+document.getElementById('startGame').addEventListener('click', function() {
+  document.getElementById('gameContainer').style.display = 'block';
+  document.getElementById('startGame').style.display = 'none'; // Hide the button
+});
+
 let homePenalty = 0;
 let awayPenalty = 0;
 let iteration = 0;

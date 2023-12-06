@@ -30,24 +30,38 @@
       </div>
     </div>
 
-    <div  id="content">
-      <div class="score">
-        <p id="board">Match Score</p>
-        <p>Home: <span id="homePenaltyDisplay">0</span> Away: <span id="awayPenaltyDisplay">0</span></p>
+    <div id="content">
+      <div id="startGame">
+        <h2>Welcome to the King of the Kop game.</h2> 
+        <p>Are you ready to test your penalty saving skills? </p>
+        <p>You are playing as world class Brazilian goalkeeper Allison.</p> 
+        <p>In a vital game for the club its 0-0 at full time and the match has gone to penalties.<br>
+        You face 5 penalties and after you have tried to save each one Liverpool will try to score</p>
+        <p>All you have to do is click on the goal where you think the opposition will shoot - good luck</p>
+        <p>Press the button below to start the game</p>
+        <br>
+        <button id="startGameButton">Start Game</button>
       </div>
-      <div id="message">
-        <h3>Click where you think they are going to shoot</h3>
+        <div id="gameContainer" style="display: none;">
+        <h2>The Penalty Shoot Out Game</h2>
+        <div class="score">
+          <p id="board">Match Score</p>
+          <p>Home: <span id="homePenaltyDisplay">0</span> Away: <span id="awayPenaltyDisplay">0</span></p>
+        </div>
+        <div id="message">
+          <h3>Click where you think they are going to shoot</h3>
+        </div>
+        <div class="grid">
+          <div class="block" id="block1"><img src="assets/game/goal1.webp" alt="pic of top left of a goal"></div>
+          <div class="block" id="block2"><img src="assets/game/goal2.webp" alt="pic of bottom left of a goal"></div>
+          <div class="block" id="block3"><img src="assets/game/goal3.webp" alt="pic of top right of a goal"></div>
+          <div class="block" id="block4"><img src="assets/game/goal4.webp" alt="pic of bottom right of a goal"></div>
+        </div>
+        <div class="score">
+          <p>Penalties taken: <span id="pens">0</span></p>
+        </div>
       </div>
-      <div class="grid">
-        <div class="block" id="block1"><img src="assets/game/goal1.webp" alt="pic of top left of a goal"></div>
-        <div class="block" id="block2"><img src="assets/game/goal2.webp" alt="pic of bottom left of a goal"></div>
-        <div class="block" id="block3"><img src="assets/game/goal3.webp" alt="pic of top right of a goal"></div>
-        <div class="block" id="block4"><img src="assets/game/goal4.webp" alt="pic of bottom right of a goal"></div>
-      </div>
-      <div class="score">
-        <p>Penalties taken: <span id="pens">0</span></p>
-      </div>
-    </div>
+    </div>  
   </div>
   
   <script src="assets/js/game.js"></script>
