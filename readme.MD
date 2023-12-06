@@ -11,7 +11,7 @@
   - [2.1 As a User](#21-as-a-user)
   - [2.2 As the Site Owner](#22-as-the-site-owner)
 - [3.0 Website Concept, Structure and Wireframe](#30-website-concept-and-wireframe)
-  - [3.1 Index](#31-index)
+  - [3.1 Game](#31-game)
   - [3.2 Quiz](#32-quiz)
   - [3.3 Feedback](#33-feedback)
 - [4.0 Features](#40-features)
@@ -45,13 +45,13 @@ The feedback for will allow users to contact the site owner with any comments th
 
 ### 2.1 As a User
 
-1. Play the fun, interactive football based game and see the outcome
+1. Play the fun, interactive football based game with simple to understand rules and see the outcome
 
 2. Take part in a quiz and see if they get more answers right than wrong
 
 3. Be able to learn about Liverpool FC
 
-4. Send comments to the site owner related to the game or quiz
+4. Send comments to the Site Owner related to the game or quiz
 
 ### 2.2 As the Site Owner
 
@@ -69,7 +69,19 @@ The feedback for will allow users to contact the site owner with any comments th
 
 ## 3.0 Website Concept and Wireframe
 
-### 3.1 Index
+The site will have 3 pages - the game, a quiz and a feedback form
+
+### 3.1 Game
+
+The game takes the form of a penalty shoot out with the user taking the role of the home team goalkeeper  
+
+The home team will take a penalty and the user will be informed wether they score or not.  
+
+If they score, the home team score is increased by one.  
+
+The user will then get the chance to save a penalty.  The game will show where the ball is going to go in the goal and the user has a short period of time to click on the ball to save it.  If the user does not click in time they missed and it is a goal for the away team.
+
+Once all the penalties have been taken the final score will be advised with the chance to play again
 
 User Stories covered - 1,4,5,6,7,8,9
 
@@ -77,11 +89,25 @@ User Stories covered - 1,4,5,6,7,8,9
 
 ### 3.2 Quiz
 
+This will be a 10 question quiz about Liverpool FC
+
+The questions will be multiple choice and will be accompanied by a relevant image
+
+If you answer correctly you score a goal and if you are incorrect it is a goal for the opposition
+
+A scoreboard is updated throughout the game and the final score advised at the end
+
 User Stories covered - 2,3,6,7,8,9
 
 ![Wireframes](https://share.balsamiq.com/c/uqHHej3wZrWDNNdKundqU2.png)
 
 ### 3.3 Feeedback
+
+This feedback form enables the user to contact the Site Owner should they wish to do so
+
+It will include full validation of all the fields in the form
+
+The user will be advised that their message has been sent and what information was sent
 
 User Stories covered - 4,,6,7,8,9,10
 
