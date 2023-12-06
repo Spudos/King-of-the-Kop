@@ -108,6 +108,8 @@ a {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 /* header elements */
