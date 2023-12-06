@@ -32,7 +32,7 @@ const questions = [
   },
   {
     questionNumber: "Question 4",
-    question: "When the current Anfield road development is complete, what will be the approximate capacity of Anfield",
+    question: "When the current Anfield Road development is complete, what will be the approximate capacity of Anfield",
     options: ["52000", "45000", "61000"],
     answer: "61000"
   },
@@ -149,29 +149,30 @@ answerButtons.forEach(button => {
       awayScore++;
     }
 
-    // Move to the next question
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-      displayQuestion(currentQuestionIndex);
-    } else {
-      alert("Thats full time! The final score is: " + homeScore + " - " + awayScore);
-      // Add further actions for quiz completion
-    }
-    if (currentQuestionIndex === questions.length) {
-      const tryAgainButton = document.createElement('button');
-      tryAgainButton.textContent = 'Try Again';
-      tryAgainButton.addEventListener('click', function() {
-        currentQuestionIndex = 0;
-        homeScore = 0;
-        awayScore = 0;
-        document.getElementById('homeScoreDisplay').textContent = homeScore;
-        document.getElementById('awayScoreDisplay').textContent = awayScore;
+    // Delay moving to the next question
+    setTimeout(function() {
+      currentQuestionIndex++;
+      if (currentQuestionIndex < questions.length) {
         displayQuestion(currentQuestionIndex);
-        // Hide the "Try Again" button
-        tryAgainButton.style.display = 'none';
-      });
-      document.querySelector('.quiz-container').appendChild(tryAgainButton);
-    }
+      } else {
+        document.getElementById('board').textContent = "Final Score";
+      }
+      if (currentQuestionIndex === questions.length) {
+        const tryAgainButton = document.createElement('button');
+        tryAgainButton.textContent = 'Try Again';
+        tryAgainButton.addEventListener('click', function() {
+          currentQuestionIndex = 0;
+          homeScore = 0;
+          awayScore = 0;
+          document.getElementById('homeScoreDisplay').textContent = homeScore;
+          document.getElementById('awayScoreDisplay').textContent = awayScore;
+          displayQuestion(currentQuestionIndex);
+          // Hide the "Try Again" button
+          tryAgainButton.style.display = 'none';
+        });
+        document.querySelector('.quiz-container').appendChild(tryAgainButton);
+      }
+    }, 3000); // Delay moving to the next question for 3 seconds
   });
 });
 
