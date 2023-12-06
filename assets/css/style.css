@@ -253,3 +253,8 @@ button {
   background-color: lightgray;
   cursor: pointer;
 }
+
+#message {
+height: 25px;
+padding: 5px 0 0 0;
+}

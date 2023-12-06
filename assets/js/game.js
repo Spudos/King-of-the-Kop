@@ -3,6 +3,7 @@ let awayPenalty = 0;
 let iteration = 0;
 
 function handleBlockClick() {
+  document.getElementById('message').textContent = " ";
   const randomBlock = Math.floor(Math.random() * 4) + 1;
   if (parseInt(this.id.slice(-1)) === randomBlock) {
     document.getElementById('board').textContent = "You saved it!";
@@ -25,15 +26,17 @@ function handleBlockClick() {
       document.getElementById('homePenaltyDisplay').textContent = homePenalty;
       document.getElementById('board').textContent = "Your team scored!";
       setTimeout(function() {
-        document.getElementById('board').textContent = "Match Score";
+      document.getElementById('board').textContent = "Match Score";
+      document.getElementById('message').innerHTML = "<h3>Click where you think they are going to shoot</h3>";  
       }, 3000);
     } else {
       document.getElementById('board').textContent = "Your team missed!";
       setTimeout(function() {
-        document.getElementById('board').textContent = "Match Score";
-      }, 3000);
-      document.getElementById('pens').textContent = iteration + 1;
+      document.getElementById('board').textContent = "Match Score";
+      document.getElementById('message').innerHTML = "<h3>Click where you think they are going to shoot</h3>";  
+      }, 3000);  
     }
+    document.getElementById('pens').textContent = iteration + 1;
 
     iteration++;
     if (iteration >= 5) {
@@ -42,6 +45,7 @@ function handleBlockClick() {
       });
     }
   }, 3000);
+      
 }
 document.querySelectorAll('.block').forEach(block => {
   block.addEventListener('click', handleBlockClick);
