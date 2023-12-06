@@ -98,6 +98,16 @@ a {
   text-decoration: underline;
 }
 
+#nav {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0;
+  margin: 10px 0 10px 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
 /* main block styling */
 #main {
   margin: auto;
