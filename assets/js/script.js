@@ -91,34 +91,34 @@ function displayQuestion(index) {
   const imageContainer = document.getElementById('imageContainer');
   switch (index) {
     case 0:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image1.jpeg" alt="Image 1" class="quizpic">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image1.jpeg" alt="a picture of liverpool celegrating" class="quizpic">';
       break;
     case 1:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image2.jpg" alt="Image 2" class="quizpic">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image2.jpg" alt="a picture of jordan henderson" class="quizpic">';
       break;
     case 2:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image3.jpg" alt="Image 3" class="quizpic">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image3.jpg" alt="a picture of trent alexander-arnold about to take a corner" class="quizpic">';
       break;
     case 3:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image4.jpg" alt="Image 4" class="quizpic">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image4.jpg" alt="a picture of anfield" class="quizpic">';
       break;
     case 4:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image5.jpeg" alt="Image 5" class="quizpic">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image5.jpeg" alt="a picture of the liverpool and man utd logos" class="quizpic">';
       break;
     case 5:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image6.jpg" alt="Image 6" class="quizpic">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image6.jpg" alt="a picture of liverpool winning the champions leage" class="quizpic">';
       break;
     case 6:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image7.webp" alt="Image 7" class="quizpic">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image7.webp" alt="a picture of jamie carragher" class="quizpic">';
       break;
     case 7:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image8.jpg" alt="Image 8" class="quizpic">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image8.jpg" alt="a picture of the premier league trophy" class="quizpic">';
       break;
     case 8:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image9.jpg" alt="Image 9" class="quizpic">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image9.jpg" alt="a picture of a premnier league table" class="quizpic">';
       break;
     case 9:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image10.jpg" alt="Image 10" class="quizpic">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image10.jpg" alt="a picture of the fa cup" class="quizpic">';
       break;            
     default:
       imageContainer.innerHTML = ''; // Clear the image container if no specific image is needed
