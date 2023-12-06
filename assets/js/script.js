@@ -134,13 +134,16 @@ answerButtons.forEach(button => {
     const correctAnswer = questions[currentQuestionIndex].answer;
 
     if (selectedAnswer === correctAnswer) {
+      document.getElementById('homeScoreDisplay').textContent = "goal";
+      setTimeout(function() {
+        document.getElementById('homeScoreDisplay').textContent = homeScore;
+      }, 2000);
       homeScore++;
-      document.getElementById('homeScoreDisplay').textContent = homeScore;
-      alert("Scored, marvellous strike!");
     } else {
-      awayScore++;
-      document.getElementById('awayScoreDisplay').textContent = awayScore;
-      alert("A goal for the opposition!");
+      document.getElementById('awayScoreDisplay').textContent = "goal";
+      setTimeout(function() {
+        document.getElementById('awayScoreDisplay').textContent = homeScore;
+      }, 2000);
     }
 
     // Move to the next question
