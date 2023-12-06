@@ -143,10 +143,10 @@ answerButtons.forEach(button => {
     } else {
       document.getElementById('board').textContent = "Away team score!";
       setTimeout(function() {
-        document.getElementById('awayScoreDisplay').textContent = homeScore;
+        document.getElementById('awayScoreDisplay').textContent = awayScore; // Update awayScore instead of homeScore
         document.getElementById('board').textContent = "Match Score";
       }, 2000);
-      awayScore++;
+      awayScore++; // Update the awayScore variable
     }
 
     // Delay moving to the next question
