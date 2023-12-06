@@ -2,19 +2,18 @@
 
 ![Mockup image]()
 
-[Live webpage]()
+[Live webpage](https://spudos.github.io/King-of-the-Kop/)
 
 ## Table of Contents
 
 - [1.0 Introduction](#10-introduction)
 - [2.0 User Stories](#20-user-stories)
-  - [2.1 As a First Time User](#21-as-a-first-time-user)
-  - [2.2 As a Second Time User](#22-as-a-returning-user)
-  - [2.3 As the Site Owner](#23-as-the-site-owner)
+  - [2.1 As a User](#21-as-a-user)
+  - [2.2 As the Site Owner](#22-as-the-site-owner)
 - [3.0 Website Concept, Structure and Wireframe](#30-website-concept-and-wireframe)
   - [3.1 Index](#31-index)
   - [3.2 Quiz](#32-quiz)
-  - [3.3 Feedback Form](#33-feedback-form)
+  - [3.3 Feedback](#33-feedback)
 - [4.0 Features](#40-features)
   - [4.1 Colour Scheme and Font](#41-colour-scheme-and-font)
   - [4.2 Navigation](#42-navigation)
@@ -32,37 +31,77 @@
 
 ## 1.0 Introduction
 
+This site was designed to be an interactive and fun football themed game and quiz
+
+The site is to be fully responsive and pass all accessibility tests
+
+The game will feature a penalty shoot out where javascript is used to play out the game to a outcome
+
+The quiz will be a short test of knowledge that notifies the user if they are right or wrong after each answer
+
+The feedback for will allow users to contact the site owner with any comments they would like to make.  This form will perform validations for each input field and feedback to the user if they have made a mistake or omitted something
+
 ## 2.0 User Stories
 
-### 2.1 As a First Time User
+### 2.1 As a User
 
-### 2.2 As a Returning User
+1. Play the fun, interactive football based game and see the outcome
 
-### 2.3 As the Site Owner
+2. Take part in a quiz and see if they get more answers right than wrong
+
+3. Be able to learn about Liverpool FC
+
+4. Send comments to the site owner related to the game or quiz
+
+### 2.2 As the Site Owner
+
+5. Present an interesting game that is fun to play
+
+6. Provide interactive content
+
+7. The site should be designed in a user-friendly, accessible and simple way
+
+8. The site should be fully responsive
+
+9. The user should receive clear feedback related to their actions
+
+10. Receive comments from the user should they wish to submit them
 
 ## 3.0 Website Concept and Wireframe
 
 ### 3.1 Index
 
-User Stories covered -
+User Stories covered - 1,4,5,6,7,8,9
 
 ![Wireframes]()
 
 ### 3.2 Quiz
 
-User Stories covered -
+User Stories covered - 2,3,6,7,8,9
 
 ![Wireframes]()
 
-### 3.3 Feeedback Form
+### 3.3 Feeedback
 
-User Stories covered -
+User Stories covered - 4,,6,7,8,9,10
 
 ![Wireframes]()
 
 ## 4.0 Features
 
 ### 4.1 Colour Scheme and Font
+
+The colors associated with Liverpool Football Club are red, white, green and yellow.
+
+Therefore, most these colours will be featured on the site
+
+'Red' was deemed to be too bright so 'darkred' has been used along with 'darkgreen' and 'whitesmoke'
+
+The fonts used are:
+
+Titillium web which was obtained from google fonts and is used for general site styling
+
+Scoreboard which was obtained from fontspace.com and is used for the scoreboard display in the quiz
 
 ### 4.2 Navigation
 
