@@ -238,3 +238,18 @@ button {
   font-family: 'scoreboard', sans-serif;
   letter-spacing: 5px;
 }
+
+/* game styling */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 50px;
+}
+
+.block {
+  width: 200px;
+  height: 100px;
+  background-color: lightgray;
+  cursor: pointer;
+}
