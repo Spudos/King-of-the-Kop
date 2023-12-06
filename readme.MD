@@ -109,7 +109,7 @@ It will include full validation of all the fields in the form
 
 The user will be advised that their message has been sent and what information was sent
 
-User Stories covered - 4,,6,7,8,9,10
+User Stories covered - 4,6,7,8,9,10
 
 ![Wireframes](https://share.balsamiq.com/c/op82QpvADVAN2PJ3MTuwAn.png)
 

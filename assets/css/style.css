@@ -104,6 +104,10 @@ a {
   background-color: whitesmoke;
   max-width: 80%;
   height: 100vh;
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
 /* header elements */
@@ -121,6 +125,11 @@ a {
 /* content styling */
 #content {
   text-align: center;
+  background-color: whitesmoke;
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 /* feedback form elements */
