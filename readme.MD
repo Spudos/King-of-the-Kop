@@ -73,7 +73,7 @@ The feedback for will allow users to contact the site owner with any comments th
 
 User Stories covered - 1,4,5,6,7,8,9
 
-![Wireframes]()
+![Wireframes](https://share.balsamiq.com/c/1q3jnLgFTwBx8bccErH6Wa.png)
 
 ### 3.2 Quiz
 
@@ -111,8 +111,6 @@ This section will allow the user to easily navigate from page to page across all
 
 It will be identical on each page
 
-![Nav1]()
-
 ## 5.0 Testing
 
 The site has been tested manually on all formats from 320px wide (commonly used on iphones) up to full desktop sizes over 1800px using using browser web developer tools
@@ -120,6 +118,7 @@ The site has been tested manually on all formats from 320px wide (commonly used 
 ### 5.1 Tests on Various Devices
 
 The website was checked on
+
 - Iphone 12
 - Iphone 14
 - Ipad Mini
@@ -173,17 +172,73 @@ The website was tested on the these browsers:
 
 ### 5.6 Test User Stories
 
-### As a First Time User
+### As a User
 
-### As a Returning User
-
-### As the Site Owner
-
-1. Have a hero image that is inspriational to users
+1. Play the fun, interactive football based game and see the outcome
 
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
-| Hero | View the top of the homepage | A hero image of two people working hard in the gym is included |
+|  |  |  |
+
+2. Take part in a quiz and see if they get more answers right than wrong
+
+| **Feature** | **Action** | **Result** |
+|-------------|------------|---------------------|
+|  |  |  |
+
+3. Be able to learn about Liverpool FC
+
+| **Feature** | **Action** | **Result** |
+|-------------|------------|---------------------|
+|  |  |  |
+
+4. Send comments to the site owner related to the game or quiz
+
+| **Feature** | **Action** | **Result** |
+|-------------|------------|---------------------|
+|  |  |  |
+
+### As the Site Owner
+
+| **Feature** | **Action** | **Result** |
+|-------------|------------|---------------------|
+|  |  |  |
+
+5. Present an interesting game that is fun to play
+
+| **Feature** | **Action** | **Result** |
+|-------------|------------|---------------------|
+|  |  |  |
+
+6. Provide interactive content
+
+| **Feature** | **Action** | **Result** |
+|-------------|------------|---------------------|
+|  |  |  |
+
+7. The site should be designed in a user-friendly, accessible and simple way
+
+| **Feature** | **Action** | **Result** |
+|-------------|------------|---------------------|
+|  |  |  |
+
+8. The site should be fully responsive
+
+| **Feature** | **Action** | **Result** |
+|-------------|------------|---------------------|
+|  |  |  |
+
+9. The user should receive clear feedback related to their actions
+
+| **Feature** | **Action** | **Result** |
+|-------------|------------|---------------------|
+|  |  |  |
+
+10. Receive comments from the user should they wish to submit them
+
+| **Feature** | **Action** | **Result** |
+|-------------|------------|---------------------|
+|  |  |  |
 
 ## 6.0 Unresolved Bugs
 
