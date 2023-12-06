@@ -6,16 +6,16 @@ function handleBlockClick() {
   document.getElementById('message').textContent = " ";
   const randomBlock = Math.floor(Math.random() * 4) + 1;
   if (parseInt(this.id.slice(-1)) === randomBlock) {
-    document.getElementById('board').textContent = "You saved it!";
+    document.getElementById('message').innerHTML = "<h3>You saved it!</h3>";
     setTimeout(function() {
-      document.getElementById('board').textContent = "Match Score";
+      document.getElementById('message').innerHTML = "<h3>Click where you think they are going to shoot</h3>"; 
     }, 3000);
   } else {
     awayPenalty++;
     document.getElementById('awayPenaltyDisplay').textContent = awayPenalty;
-    document.getElementById('board').textContent = "They scored";
+    document.getElementById('message').innerHTML = "<h3>They scored!</h3>"; 
     setTimeout(function() {
-      document.getElementById('board').textContent = "Match Score";
+      document.getElementById('message').textContent = "Match Score";
     }, 3000);
   }
 
@@ -24,15 +24,13 @@ function handleBlockClick() {
     if (randomNum > 2) {
       homePenalty++;
       document.getElementById('homePenaltyDisplay').textContent = homePenalty;
-      document.getElementById('board').textContent = "Your team scored!";
+      document.getElementById('message').innerHTML = "<h3>Your team scored!</h3>"; 
       setTimeout(function() {
-      document.getElementById('board').textContent = "Match Score";
       document.getElementById('message').innerHTML = "<h3>Click where you think they are going to shoot</h3>";  
       }, 3000);
     } else {
-      document.getElementById('board').textContent = "Your team missed!";
+      document.getElementById('message').innerHTML = "<h3>Your team missed!</h3>"; 
       setTimeout(function() {
-      document.getElementById('board').textContent = "Match Score";
       document.getElementById('message').innerHTML = "<h3>Click where you think they are going to shoot</h3>";  
       }, 3000);  
     }

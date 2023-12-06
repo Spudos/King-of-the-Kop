@@ -243,15 +243,15 @@ button {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 0px;
   margin: 50px;
 }
 
 .block {
   width: 200px;
   height: 100px;
-  background-color: lightgray;
-  cursor: pointer;
+  background-color: green;
+  cursor: url('/assets/images/futbol-solid.svg'), auto;
 }
 
 #message {
