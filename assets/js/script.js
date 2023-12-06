@@ -136,38 +136,60 @@ answerButtons.forEach(button => {
     if (selectedAnswer === correctAnswer) {
       homeScore++;
       document.getElementById('homeScoreDisplay').textContent = homeScore;
-      alert("Scored, marvellous strike!");
+      displayCorrectImageAndMoveToNext();
     } else {
       awayScore++;
       document.getElementById('awayScoreDisplay').textContent = awayScore;
-      alert("A goal for the opposition!");
-    }
-
-    // Move to the next question
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-      displayQuestion(currentQuestionIndex);
-    } else {
-      alert("Thats full time! The final score is: " + homeScore + " - " + awayScore);
-      // Add further actions for quiz completion
-    }
-    if (currentQuestionIndex === questions.length) {
-      const tryAgainButton = document.createElement('button');
-      tryAgainButton.textContent = 'Try Again';
-      tryAgainButton.addEventListener('click', function() {
-        currentQuestionIndex = 0;
-        homeScore = 0;
-        awayScore = 0;
-        document.getElementById('homeScoreDisplay').textContent = homeScore;
-        document.getElementById('awayScoreDisplay').textContent = awayScore;
-        displayQuestion(currentQuestionIndex);
-        // Hide the "Try Again" button
-        tryAgainButton.style.display = 'none';
-      });
-      document.querySelector('.quiz-container').appendChild(tryAgainButton);
+      displayMissedImageAndMoveToNext();
     }
   });
 });
+
+function displayCorrectImageAndMoveToNext() {
+  displayQuestionImage("/assets/quiz/goal.jpeg");
+  const imageDisplayTime = 2000; // 2 seconds in milliseconds
+  setTimeout(function() {
+    moveToNextQuestion();
+  }, imageDisplayTime);
+}
+
+function displayMissedImageAndMoveToNext() {
+  displayQuestionImage("/assets/quiz/missed.webp");
+  const imageDisplayTime = 2000; // 2 seconds in milliseconds
+  setTimeout(function() {
+    moveToNextQuestion();
+  }, imageDisplayTime);
+}
+
+function displayQuestionImage(imageUrl) {
+  const imageContainer = document.getElementById('imageContainer');
+  imageContainer.innerHTML = `<img src="${imageUrl}" alt="Image" class="quizpic">`;
+}
+
+function moveToNextQuestion() {
+  currentQuestionIndex++;
+  if (currentQuestionIndex < questions.length) {
+    displayQuestion(currentQuestionIndex);
+  } else {
+    alert("That's full time! The final score is: " + homeScore + " - " + awayScore);
+    // Add further actions for quiz completion
+  }
+  if (currentQuestionIndex === questions.length) {
+    const tryAgainButton = document.createElement('button');
+    tryAgainButton.textContent = 'Try Again';
+    tryAgainButton.addEventListener('click', function() {
+      currentQuestionIndex = 0;
+      homeScore = 0;
+      awayScore = 0;
+      document.getElementById('homeScoreDisplay').textContent = homeScore;
+      document.getElementById('awayScoreDisplay').textContent = awayScore;
+      displayQuestion(currentQuestionIndex);
+      tryAgainButton.style.display = 'none';
+    });
+    document.querySelector('.quiz-container').appendChild(tryAgainButton);
+  }
+}
+
 
 // **** Feedback From ****
 // Add focus to the name field on page load
