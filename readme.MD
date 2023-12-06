@@ -79,13 +79,13 @@ User Stories covered - 1,4,5,6,7,8,9
 
 User Stories covered - 2,3,6,7,8,9
 
-![Wireframes]()
+![Wireframes](https://share.balsamiq.com/c/uqHHej3wZrWDNNdKundqU2.png)
 
 ### 3.3 Feeedback
 
 User Stories covered - 4,,6,7,8,9,10
 
-![Wireframes]()
+![Wireframes](https://share.balsamiq.com/c/op82QpvADVAN2PJ3MTuwAn.png)
 
 ## 4.0 Features
 
