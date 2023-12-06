@@ -75,13 +75,17 @@ The site will have 3 pages - the game, a quiz and a feedback form
 
 The game takes the form of a penalty shoot out with the user taking the role of the home team goalkeeper  
 
-The home team will take a penalty and the user will be informed wether they score or not.  
+The home team will take a penalty and the user will be informed whether they score or not.  
 
 If they score, the home team score is increased by one.  
 
-The user will then get the chance to save a penalty.  The game will show where the ball is going to go in the goal and the user has a short period of time to click on the ball to save it.  If the user does not click in time they missed and it is a goal for the away team.
+The user will then get the chance to save a penalty.  The user clicks on the goal where they think the away team will shoot.  The user is then told if they saved the shot or not.
 
 Once all the penalties have been taken the final score will be advised with the chance to play again
+
+The image of the goal was found at
+
+![goal image](https://www.vectorstock.com/royalty-free-vector/realistic-football-goal-vector-21105816)
 
 User Stories covered - 1,4,5,6,7,8,9
 
