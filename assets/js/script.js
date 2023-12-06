@@ -134,16 +134,19 @@ answerButtons.forEach(button => {
     const correctAnswer = questions[currentQuestionIndex].answer;
 
     if (selectedAnswer === correctAnswer) {
-      document.getElementById('homeScoreDisplay').textContent = "goal";
+      document.getElementById('board').textContent = "Liverpool Score!";
       setTimeout(function() {
         document.getElementById('homeScoreDisplay').textContent = homeScore;
+        document.getElementById('board').textContent = "Match Score";
       }, 2000);
       homeScore++;
     } else {
-      document.getElementById('awayScoreDisplay').textContent = "goal";
+      document.getElementById('board').textContent = "Away team score!";
       setTimeout(function() {
         document.getElementById('awayScoreDisplay').textContent = homeScore;
+        document.getElementById('board').textContent = "Match Score";
       }, 2000);
+      awayScore++;
     }
 
     // Move to the next question
