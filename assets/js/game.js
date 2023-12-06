@@ -32,6 +32,7 @@ function handleBlockClick() {
       setTimeout(function() {
         document.getElementById('board').textContent = "Match Score";
       }, 3000);
+      document.getElementById('pens').textContent = iteration + 1;
     }
 
     iteration++;
@@ -41,7 +42,6 @@ function handleBlockClick() {
       });
     }
   }, 3000);
-  document.getElementById('pens').textContent = iteration + 1;
 }
 document.querySelectorAll('.block').forEach(block => {
   block.addEventListener('click', handleBlockClick);
