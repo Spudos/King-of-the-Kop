@@ -25,6 +25,7 @@
   - [4.8 Quiz Try Again](#48-quiz-try-again)
   - [4.9 Feedback](#49-feedback)
   - [4.10 Feedback Validation](#410-feedback-validation)
+  - [4.11 Feedback Summary](#411-feedback-summary)
 - [5.0 Testing](#50-testing)
   - [5.1 Tests on Various Devices](#51-tests-on-various-devices)
   - [5.2 HTML and CSS](#52-html-and-css)
@@ -149,36 +150,57 @@ It will be identical on each page
 
 ### 4.3 Game Instructions
 
+Clear instructions are given with a start game button so the user knows what to do
+
 ![Mockup image](/assets/features/game_rules.png)
 
 ### 4.4 Game Play
+
+Intuitive design and in game messaging lets the user know what they should do and what the various outcomes are
 
 ![Mockup image](/assets/features/game_live.png)
 
 ### 4.5 Game Try Again
 
+A try again button is shown at the end of the game to allow multiple tries
+
 ![Mockup image](/assets/features/game_try_again.png)
 
 ### 4.6 Quiz Instructions
 
-![Mockup image](/assets/features/quiz_rulesgit statuis.png)
+Clear instructions are given with a start quiz button so the user knows what to do
+
+![Mockup image](/assets/features/quiz_rules.png)
 
 ### 4.7 Quiz Play
+
+Intuitive design and in quiz messaging lets the user know what they should do and what the various outcomes are
 
 ![Mockup image](/assets/features/quiz_live.png)
 
 ### 4.8 Quiz Try Again
 
+A try again button is shown at the end of the game to allow multiple tries
+
 ![Mockup image](/assets/features/game_try_again.png)
 
 ### 4.9 Feedback
+
+A simple feedback form is provided
 
 ![Mockup image](/assets/features/feedback_empty.png)
 
 ### 4.10 Feedback Validation
 
+All fields must pass validation to allow the form to be submitted
+
 ![Mockup image](/assets/features/feedback_validation.png)
 
+### 4.11 Feedback Summary
+
+A summary is shown so the user knows what has been submitted
+
+![Mockup image](/assets/features/feedback_summary.png)
 
 ## 5.0 Testing
 
