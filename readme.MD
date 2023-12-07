@@ -1,6 +1,6 @@
 # King of the Kop
 
-![Mockup image]()
+![Mockup image](/assets/testing/multi_device.png)
 
 [Live webpage](https://spudos.github.io/King-of-the-Kop/)
 
