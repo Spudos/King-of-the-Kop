@@ -1,14 +1,18 @@
+// **** game ****
+// add listener for start button and show game/hide rules when pressed
 document.getElementById('startGameButton').addEventListener('click', function() {
 document.getElementById('gameContainer').style.display = 'block';
 document.getElementById('instructions').style.display = 'none';
 });
 
+// set required vaiables
 let homePenalty = 0;
 let awayPenalty = 0;
 let iteration = 0;
 
+// on block click comepare with random number to see if matched then process outcome
 function handleBlockClick() {
-
+  // turns of button click listener until it is time for the next go
   document.querySelectorAll('.block').forEach(block => {
     block.removeEventListener('click', handleBlockClick);
   });
@@ -24,6 +28,8 @@ function handleBlockClick() {
     document.getElementById('message').innerHTML = "<h3>They scored!</h3>"; 
   }
 
+  // roll random number and compare it to see what outcome is given
+  //  after 5 penalites each end the game and show the try again button
   setTimeout(() => {
     const randomNum = Math.floor(Math.random() * 4) + 1;
     if (randomNum > 1) {
@@ -49,6 +55,7 @@ function handleBlockClick() {
     }
     document.getElementById('pens').textContent = iteration + 1;
 
+    // iterates to allow a maximum of 5 penalties to be taken the reset the game when try again is pressed
     iteration++;
     if (iteration >= 5) {
       document.getElementById('message').innerHTML = "<h3>Game over!</h3>";
@@ -71,13 +78,14 @@ function handleBlockClick() {
       });
       document.getElementById('gameContainer').appendChild(tryAgainButton);
     }
-
+    // adds the listener for the block click
     document.querySelectorAll('.block').forEach(block => {
     block.addEventListener('click', handleBlockClick);
   }); 
   }, 2000);
 }
 
+// adds the listener for the block click
 document.querySelectorAll('.block').forEach(block => {
   block.addEventListener('click', handleBlockClick);
 });

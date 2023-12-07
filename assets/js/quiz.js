@@ -8,9 +8,11 @@ document.getElementById('startGame').addEventListener('click', function() {
   document.querySelector('.quiz-container').style.display = 'block';
 });
 
+// set required variables
 let homeScore = 0;
 let awayScore = 0;
 
+// set questions and answers
 const questions = [
   {
     questionNumber: "Question 1",
@@ -74,12 +76,14 @@ const questions = [
   }
 ];
 
+// add required constants
 const questionNumber = document.getElementById('questionNumber');
 const questionText = document.getElementById('questionText');
 const answerButtons = document.querySelectorAll('.answer-btn');
 
 let currentQuestionIndex = 0;
 
+// show the question
 function displayQuestion(index) {
   questionNumber.textContent = questions[index].questionNumber;
   questionText.textContent = questions[index].question;
@@ -129,6 +133,7 @@ function displayQuestion(index) {
 
 displayQuestion(currentQuestionIndex);
 
+// check answer and show who scored if right or wrong answer given
 answerButtons.forEach(button => {
   button.addEventListener('click', function() {
     const selectedAnswer = this.textContent;
@@ -144,10 +149,10 @@ answerButtons.forEach(button => {
     } else {
       document.getElementById('board').textContent = "Away team score!";
       setTimeout(function() {
-        document.getElementById('awayScoreDisplay').textContent = awayScore; // Update awayScore instead of homeScore
+        document.getElementById('awayScoreDisplay').textContent = awayScore;
         document.getElementById('board').textContent = "Match Score";
       }, 2000);
-      awayScore++; // Update the awayScore variable
+      awayScore++;
     }
 
     // Delay moving to the next question
@@ -158,6 +163,7 @@ answerButtons.forEach(button => {
       } else {
         document.getElementById('board').textContent = "Final Score";
       }
+      // show try again button and reset game when it is pressed
       if (currentQuestionIndex === questions.length) {
         const tryAgainButton = document.createElement('button');
         tryAgainButton.textContent = 'Try Again';
@@ -168,12 +174,12 @@ answerButtons.forEach(button => {
           document.getElementById('homeScoreDisplay').textContent = homeScore;
           document.getElementById('awayScoreDisplay').textContent = awayScore;
           displayQuestion(currentQuestionIndex);
-          // Hide the "Try Again" button
+
           tryAgainButton.style.display = 'none';
         });
         document.querySelector('.quiz-container').appendChild(tryAgainButton);
       }
-    }, 3000); // Delay moving to the next question for 3 seconds
+    }, 2000);
   });
 });
 
