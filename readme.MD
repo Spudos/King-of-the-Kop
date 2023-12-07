@@ -162,6 +162,7 @@ The W3C validation service was used to validate the HTML and CSS code with no er
 
 <details><summary>CSS</summary>
 <img src="/assets/testing/css_test.png">
+</details>
 <details><summary>index.html</summary>
 <img src="/assets/testing/game_html_test.png">
 </details>
