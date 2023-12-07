@@ -53,9 +53,9 @@ The feedback for will allow users to contact the site owner with any comments th
 
 ### 2.1 As a User
 
-1. Play the fun, interactive football based game with simple to understand rules and see the outcome
+1. Play a fun, interactive football based game multiple times with simple to understand rules and see the outcome
 
-2. Take part in a quiz and see if they get more answers right than wrong
+2. Take part in a quiz multiple times and see if they get more answers right than wrong
 
 3. Be able to learn about Liverpool FC
 
@@ -71,9 +71,7 @@ The feedback for will allow users to contact the site owner with any comments th
 
 8. The site should be fully responsive
 
-9. The user should receive clear feedback related to their actions
-
-10. Receive comments from the user should they wish to submit them
+9. Receive validated feedback from the user should they wish to submit them
 
 ## 3.0 Website Concept and Wireframe
 
@@ -163,7 +161,7 @@ It will be identical on each page
 
 ### 4.6 Quiz Instructions
 
-![Mockup image](/assets/features/quiz_rules.png)
+![Mockup image](/assets/features/quiz_rulesgit statuis.png)
 
 ### 4.7 Quiz Play
 
@@ -250,13 +248,13 @@ The website was tested on the these browsers:
 
 ### As a User
 
-1. Play the fun, interactive football based game and see the outcome
+1. Play a fun, interactive football based game multiple times with simple to understand rules and see the outcome
 
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
 |  |  |  |
 
-2. Take part in a quiz and see if they get more answers right than wrong
+2. Take part in a quiz multiple times and see if they get more answers right than wrong
 
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
@@ -275,10 +273,6 @@ The website was tested on the these browsers:
 |  |  |  |
 
 ### As the Site Owner
-
-| **Feature** | **Action** | **Result** |
-|-------------|------------|---------------------|
-|  |  |  |
 
 5. Present an interesting game that is fun to play
 
@@ -304,13 +298,7 @@ The website was tested on the these browsers:
 |-------------|------------|---------------------|
 |  |  |  |
 
-9. The user should receive clear feedback related to their actions
-
-| **Feature** | **Action** | **Result** |
-|-------------|------------|---------------------|
-|  |  |  |
-
-10. Receive comments from the user should they wish to submit them
+9. Receive validated feedback from the user should they wish to submit them
 
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
