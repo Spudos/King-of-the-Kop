@@ -17,6 +17,14 @@
 - [4.0 Features](#40-features)
   - [4.1 Colour Scheme and Font](#41-colour-scheme-and-font)
   - [4.2 Navigation](#42-navigation)
+  - [4.3 Game Instructions](#43-game-instructions)
+  - [4.4 Game Play](#44-game-play)
+  - [4.5 Game Try Again](#45-game-try-again)
+  - [4.6 Quiz Instructions](#46-quiz-instructions)
+  - [4.7 Quiz Play](#47-quiz-play)
+  - [4.8 Quiz Try Again](#48-quiz-try-again)
+  - [4.9 Feedback](#49-feedback)
+  - [4.10 Feedback Validation](#410-feedback-validation)
 - [5.0 Testing](#50-testing)
   - [5.1 Tests on Various Devices](#51-tests-on-various-devices)
   - [5.2 HTML and CSS](#52-html-and-css)
@@ -140,6 +148,39 @@ The navigation function must exist on all pages and be fully responsive
 This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button
 
 It will be identical on each page
+
+### 4.3 Game Instructions
+
+![Mockup image](/assets/features/game_rules.png)
+
+### 4.4 Game Play
+
+![Mockup image](/assets/features/game_live.png)
+
+### 4.5 Game Try Again
+
+![Mockup image](/assets/features/game_try_again.png)
+
+### 4.6 Quiz Instructions
+
+![Mockup image](/assets/features/quiz_rules.png)
+
+### 4.7 Quiz Play
+
+![Mockup image](/assets/features/quiz_live.png)
+
+### 4.8 Quiz Try Again
+
+![Mockup image](/assets/features/game_try_again.png)
+
+### 4.9 Feedback
+
+![Mockup image](/assets/features/feedback_empty.png)
+
+### 4.10 Feedback Validation
+
+![Mockup image](/assets/features/feedback_validation.png)
+
 
 ## 5.0 Testing
 
@@ -307,6 +348,8 @@ You can clone the repository by following these steps:
 
 ### 8.1 Media
 
-Google fonts was used for additional fonts as required
+andy-bell.co.uk was used as a css reset
 
-[Google fonts](https://fonts.google.com/)
+google fonts and fontspace.com were used as a font resource
+
+seeklogo.com was used for the liverpool fc logo
