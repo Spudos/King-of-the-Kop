@@ -139,6 +139,7 @@ a {
   text-align: center;
   background-color: whitesmoke;
   width: fit-content;
+  max-width: 600px;
   margin: auto;
   padding: 20px;
   border-radius: 5px;
@@ -208,11 +209,6 @@ form {
   max-height: 100px;
 }
 
-#startQuizBtn {
-  width: 50%;
-  margin: auto;
-}
-
 button {
   background-color: darkred;
   color: #f0f0f0;
@@ -255,6 +251,6 @@ button {
 }
 
 #message {
-height: 25px;
-padding: 5px 0 0 0;
+  height: 25px;
+  padding: 5px 0 0 0;
 }

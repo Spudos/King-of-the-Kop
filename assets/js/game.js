@@ -1,6 +1,6 @@
-document.getElementById('startGame').addEventListener('click', function() {
+document.getElementById('startGameButton').addEventListener('click', function() {
 document.getElementById('gameContainer').style.display = 'block';
-document.getElementById('startGame').style.display = 'none';
+document.getElementById('instructions').style.display = 'none';
 });
 
 let homePenalty = 0;
