@@ -242,7 +242,7 @@ button {
 @font-face {
   /* from https://www.fontspace.com/category/scoreboard */
   font-family: 'scoreboard';
-  src: url('/assets/sf-digital-readout-font/SfDigitalReadoutHeavy-AwVg.ttf') format('truetype')
+  src: url('assets/sf-digital-readout-font/SfDigitalReadoutHeavy-AwVg.ttf') format('truetype')
 }
 
 .score {
