@@ -160,13 +160,17 @@ The website was checked on
 
 The W3C validation service was used to validate the HTML and CSS code with no errors reported
 
-index.html [results](/assets/testing/game_html_test.png)
-
-quiz.html [results](/assets/testing/quiz_html_test.png)
-
-feedback.html [results](/assets/testing/feedback_html_test.png)
-
-style.css [results](/assets/testing/css_test.png)
+<details><summary>CSS</summary>
+<img src="/assets/testing/css_test.png">
+<details><summary>index.html</summary>
+<img src="/assets/testing/game_html_test.png">
+</details>
+<details><summary>quiz.html</summary>
+<img src="/assets/testing/quiz_html_test.png">
+</details>
+<details><summary>feedback.html</summary>
+<img src="/assets/testing/feedback_html_test.png">
+</details>
 
 ### 5.3 Accessibility
 
