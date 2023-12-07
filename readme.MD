@@ -90,10 +90,6 @@ The user will then get the chance to save a penalty.  The user clicks on the goa
 
 Once all the penalties have been taken the final score will be advised with the chance to play again
 
-The image of the goal was found at
-
-![goal image](https://www.vectorstock.com/royalty-free-vector/realistic-football-goal-vector-21105816)
-
 User Stories covered - 1,4,5,6,7,8,9
 
 ![Wireframes](https://share.balsamiq.com/c/1q3jnLgFTwBx8bccErH6Wa.png)
