@@ -169,11 +169,17 @@ form {
 }
 
 /* game styling */
+#grid-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0px;
   margin: 50px 0 50px 0;
+  max-width: 300px;
 }
 
 .block {
@@ -256,18 +262,22 @@ button {
 
 /* Styles for portrait tablets, portrait iPad, e-readers, landscape 800x480 phones */
 @media (min-width: 600px) {
-  .testimonial {
-    width: 50%;
+  .grid {
+    max-width: 400px;
+  }
+  
+  .block {
+    width: 200px;
+    height: 109px;
   }
 
-  #main-links {
-    width: 70%;
-  }
-
-  #hero {
-    width: 60%;
-  }
-
+  #main {
+    max-width: 70%;
+    }
+  
+    #content {
+      width: fit-content;
+    }
 }
 
 /* Styles for landscape tablets, landscape iPad, low-resolution laptops and desktops */
@@ -282,17 +292,5 @@ button {
 
 /* Styles for high-resolution laptops and desktops */
 @media (min-width: 1281px) {
-  #main {
-  max-width: 70%;
-  }
-
-  #content {
-    width: fit-content;
-  }
-
-  .block {
-    width: 200px;
-    height: 109px;
-  }
 
 }
