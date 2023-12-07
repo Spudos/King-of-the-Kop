@@ -143,7 +143,7 @@ It will be identical on each page
 
 ## 5.0 Testing
 
-The site has been tested manually on all formats from 320px wide (commonly used on iphones) up to full desktop sizes over 1800px using using browser web developer tools
+The site has been tested manually on all formats from 360px wide (commonly used on iphones) up to full desktop sizes over 1800px using using browser web developer tools
 
 ### 5.1 Tests on Various Devices
 
@@ -160,13 +160,13 @@ The website was checked on
 
 The W3C validation service was used to validate the HTML and CSS code with no errors reported
 
-index.html [results]()
+index.html [results](/assets/testing/game_html_test.png)
 
-quiz.html [results]()
+quiz.html [results](/assets/testing/quiz_html_test.png)
 
-feedback.html [results]()
+feedback.html [results](/assets/testing/feedback_html_test.png)
 
-style.css [results]()
+style.css [results](/assets/testing/css_test.png)
 
 ### 5.3 Accessibility
 
