@@ -123,7 +123,11 @@ a {
 
 /* header elements */
 #club-logo {
-  width: 100px;
+  width: 70px;
+}
+
+h1 {
+  margin: 0;
 }
 
 #header {
