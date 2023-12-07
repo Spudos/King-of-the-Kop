@@ -91,7 +91,7 @@ function displayQuestion(index) {
   const imageContainer = document.getElementById('imageContainer');
   switch (index) {
     case 0:
-      imageContainer.innerHTML = '<img src="/assets/quiz/image1.jpeg" alt="a picture of liverpool celegrating" class="quizpic">';
+      imageContainer.innerHTML = '<img src="/assets/quiz/image1.jpeg" alt="a picture of liverpool celebrating" class="quizpic">';
       break;
     case 1:
       imageContainer.innerHTML = '<img src="/assets/quiz/image2.jpg" alt="a picture of jordan henderson" class="quizpic">';

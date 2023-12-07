@@ -183,13 +183,13 @@ feedback.html [results]()
 Chrome lighthouse tools were used to verify that all performance ratings were satisfactory
 
 <details><summary>index.html</summary>
-<img src="">
+<img src="/assets/testing/game_lighthouse.png">
 </details>
 <details><summary>quiz.html</summary>
-<img src="">
+<img src="/assets/testing/quiz_lighthouse.png">
 </details>
 <details><summary>feedback.html</summary>
-<img src="">
+<img src="/assets/testing/feedback_lighthouse.png">
 </details>
 
 ### 5.5 Browser compatibility
