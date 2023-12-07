@@ -182,7 +182,7 @@ Intuitive design and in quiz messaging lets the user know what they should do an
 
 A try again button is shown at the end of the game to allow multiple tries
 
-![Mockup image](/assets/features/game_try_again.png)
+![Mockup image](/assets/features/quiz_try_again.png)
 
 ### 4.9 Feedback
 
