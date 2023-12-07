@@ -274,25 +274,25 @@ The website was tested on the these browsers:
 
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
-|  |  |  |
+| game | Read the instructions then start the game following the simple interface | all criteria satisfied |
 
 2. Take part in a quiz multiple times and see if they get more answers right than wrong
 
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
-|  |  |  |
+| Quiz | Read the instructions then start the quiz following the simple interface | all criteria satisfied |
 
 3. Be able to learn about Liverpool FC
 
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
-|  |  |  |
+| Quiz | Questions and associated answer provide interesting knowledge about the club | all criteria satisfied |
 
 4. Send comments to the site owner related to the game or quiz
 
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
-|  |  |  |
+| Feedback form | Complete the validated fields to submit your feedback | all criteria satisfied |
 
 ### As the Site Owner
 
@@ -300,31 +300,32 @@ The website was tested on the these browsers:
 
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
-|  |  |  |
+|  Game | Play the game and try to bneat your score! | all criteria satisfied |
+|  Quiz | Play the quiz and try to beat your score whilst learning about LFC | all criteria satisfied |
 
 6. Provide interactive content
 
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
-|  |  |  |
+| All elements | The site is highly interactive responding to buttton clicks and other inputs | all criteria satisfied |
 
 7. The site should be designed in a user-friendly, accessible and simple way
 
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
-|  |  |  |
+| All | Easy navigation and the site passed all accessibility tests | all criteria satisfied |
 
 8. The site should be fully responsive
 
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
-|  |  |  |
+| All | Tested on various platforms and confirmed as fully functional on all of them | all criteria satisfied |
 
 9. Receive validated feedback from the user should they wish to submit them
 
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
-|  |  |  |
+| Feedback form | Form cannot be submitted until answers have been given in the correct format | all criteria satisfied |
 
 ## 6.0 Unresolved Bugs
 
