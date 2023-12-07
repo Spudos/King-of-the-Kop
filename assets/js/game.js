@@ -14,7 +14,7 @@ function handleBlockClick() {
   });
   
   document.getElementById('message').textContent = " ";
-  const randomBlock = Math.floor(Math.random() * 4) + 1;
+    const randomBlock = Math.floor(Math.random() * 4) + 1;
   
   if (parseInt(this.id.slice(-1)) === randomBlock) {
     document.getElementById('message').innerHTML = "<h3>You saved it!</h3>";
@@ -25,9 +25,6 @@ function handleBlockClick() {
   }
 
   setTimeout(() => {
-
-    
-
     const randomNum = Math.floor(Math.random() * 4) + 1;
     if (randomNum > 1) {
       homePenalty++;

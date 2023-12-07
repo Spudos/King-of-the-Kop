@@ -83,6 +83,7 @@ let currentQuestionIndex = 0;
 function displayQuestion(index) {
   questionNumber.textContent = questions[index].questionNumber;
   questionText.textContent = questions[index].question;
+  
   for (let i = 0; i < answerButtons.length; i++) {
     answerButtons[i].textContent = questions[index].options[i];
   }

@@ -72,6 +72,5 @@ const summaryTemplate = `
 document.getElementById("content").innerHTML = summaryTemplate;
 
 // Prevent the form from actually submitting
-return false; 
-
+return false;
 }

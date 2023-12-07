@@ -177,11 +177,11 @@ The W3C validation service was used to validate the HTML and CSS code with no er
 
 The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards
 
-index.html [results]()
+index.html [results](https://wave.webaim.org/report#/https://spudos.github.io/King-of-the-Kop/)
 
-quiz.html [results]()
+quiz.html [results](https://wave.webaim.org/report#/https://spudos.github.io/King-of-the-Kop/quiz.html)
 
-feedback.html [results]()
+feedback.html [results](https://wave.webaim.org/report#/https://spudos.github.io/King-of-the-Kop/feedback.html)
 
 ### 5.4 Performance
 
