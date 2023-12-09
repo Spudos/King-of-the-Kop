@@ -38,7 +38,7 @@
 - [7.0 Deployment](#70-deployment)
 - [8.0 Credits](#80-credits)
   - [8.1 Media](#81-media)
-- [9.0 Criteria Checklist](#90-criteria-checklist)
+- [9.0 PP2 Criteria Checklist](#90-pp2-criteria-checklist)
 
 ## 1.0 Introduction
 
