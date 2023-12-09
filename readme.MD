@@ -91,7 +91,7 @@ The user will then get the chance to save a penalty.  The user clicks on the goa
 
 Once all the penalties have been taken the final score will be advised with the chance to play again
 
-User Stories covered - 1,4,5,6,7,8,9
+User Stories covered - 1,5,6,7,8
 
 ![Wireframes](https://share.balsamiq.com/c/1q3jnLgFTwBx8bccErH6Wa.png)
 
@@ -105,7 +105,7 @@ If you answer correctly you score a goal and if you are incorrect it is a goal f
 
 A scoreboard is updated throughout the game and the final score advised at the end
 
-User Stories covered - 2,3,6,7,8,9
+User Stories covered - 2,3,6,7,8
 
 ![Wireframes](https://share.balsamiq.com/c/uqHHej3wZrWDNNdKundqU2.png)
 
@@ -119,7 +119,7 @@ The user will be advised that their message has been sent and what information w
 
 The site will send an email to the Site Owner using emailjs.com so that the user is aware the feedback has been submitted
 
-User Stories covered - 4,6,7,8,9,10
+User Stories covered - 4,6,7,8,9
 
 ![Wireframes](https://share.balsamiq.com/c/op82QpvADVAN2PJ3MTuwAn.png)
 
@@ -151,11 +151,15 @@ It will be identical on each page
 
 Clear instructions are given with a start game button so the user knows what to do
 
+User Stories covered - 1,5,6,7,8
+
 ![Mockup image](/assets/features/game_rules.png)
 
 ### 4.4 Game Play
 
 Intuitive design and in game messaging lets the user know what they should do and what the various outcomes are
+
+User Stories covered - 1,5,6,7,8
 
 ![Mockup image](/assets/features/game_live.png)
 
@@ -163,11 +167,15 @@ Intuitive design and in game messaging lets the user know what they should do an
 
 A try again button is shown at the end of the game to allow multiple tries
 
+User Stories covered - 1,5,6,7,8
+
 ![Mockup image](/assets/features/game_try_again.png)
 
 ### 4.6 Quiz Instructions
 
 Clear instructions are given with a start quiz button so the user knows what to do
+
+User Stories covered - 2,3,6,7,8
 
 ![Mockup image](/assets/features/quiz_rules.png)
 
@@ -175,11 +183,15 @@ Clear instructions are given with a start quiz button so the user knows what to 
 
 Intuitive design and in quiz messaging lets the user know what they should do and what the various outcomes are
 
+User Stories covered - 2,3,6,7,8
+
 ![Mockup image](/assets/features/quiz_live.png)
 
 ### 4.8 Quiz Try Again
 
 A try again button is shown at the end of the game to allow multiple tries
+
+User Stories covered - 2,3,6,7,8
 
 ![Mockup image](/assets/features/quiz_try_again.png)
 
@@ -187,11 +199,15 @@ A try again button is shown at the end of the game to allow multiple tries
 
 A simple feedback form is provided
 
+User Stories covered - 4,6,7,8,9
+
 ![Mockup image](/assets/features/feedback_empty.png)
 
 ### 4.10 Feedback Validation
 
 All fields must pass validation to allow the form to be submitted
+
+User Stories covered - 4,6,7,8,9
 
 ![Mockup image](/assets/features/feedback_validation.png)
 
@@ -199,11 +215,15 @@ All fields must pass validation to allow the form to be submitted
 
 A summary is shown so the user knows what has been submitted
 
+User Stories covered - 4,6,7,8,9
+
 ![Mockup image](/assets/features/feedback_summary.png)
 
 ### 4.12 Feedback Email
 
 A email is sent to the site owner so that they are aware that information has been submitted
+
+User Stories covered - 4,6,7,8,9
 
 ![Mockup image](/assets/features/feedback_email.png)
 
