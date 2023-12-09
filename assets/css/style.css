@@ -69,6 +69,10 @@ textarea:not([rows]) {
 
 body {
   font-family: 'titillium web', sans-serif; 
+  background-image: url('../images/background.webp');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
 /* nav list styling */
