@@ -28,7 +28,7 @@
   - [4.11 Feedback Summary](#411-feedback-summary)
 - [5.0 Testing](#50-testing)
   - [5.1 Tests on Various Devices](#51-tests-on-various-devices)
-  - [5.2 HTML and CSS](#52-html-and-css)
+  - [5.2 JSHINT, HTML and CSS](#52-jshint-html-and-css)
   - [5.3 Accessibility](#53-accessibility)
   - [5.4 Performance](#54-performance)
   - [5.5 Browser Compatibility](#55-browser-compatibility)
@@ -213,7 +213,19 @@ The website was checked on
 - Macbook Pro
 - Desktop PC
 
-### 5.2 HTML and CSS
+### 5.2 JSHINT, HTML and CSS
+
+JSHINT was used to validate the js code
+
+<details><summary>index.html</summary>
+<img src="/assets/testing/game_jshint.png">
+</details>
+<details><summary>quiz.html</summary>
+<img src="/assets/testing/quiz_jshint.png">
+</details>
+<details><summary>feedback.html</summary>
+<img src="/assets/testing/feedback_jshint.png">
+</details>
 
 The W3C validation service was used to validate the HTML and CSS code with no errors reported
 
