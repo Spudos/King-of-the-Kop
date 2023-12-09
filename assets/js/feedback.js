@@ -57,6 +57,14 @@ function validateForm() {
     return false;
   }
 
+// use EmailJS and send the form data
+emailjs.sendForm('service_t4al604', 'template_ka8ekcz', document.getElementById('feedbackForm'))
+.then(function(response) {
+  console.log('SUCCESS!', response.status, response.text);
+}, function(error) {
+  console.log('FAILED...', error);
+});
+
 // Hide the form and show the summary
 document.getElementById("feedbackForm").style.display = "none";
 document.getElementById("content").style.display = "block";
