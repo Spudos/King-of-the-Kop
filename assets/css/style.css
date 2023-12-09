@@ -106,14 +106,8 @@ a {
 /* main block styling */
 #main {
   margin: auto;
-  background-color: whitesmoke;
   max-width: 100%;
   height: 1000px;
-  background-image: url('../images/background.webp');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  border-radius: 5px;
   padding: 10px;
 }
 
