@@ -248,6 +248,24 @@ button {
   letter-spacing: 5px;
 }
 
+/* footer */
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: whitesmoke;
+  color: darkred;
+  text-align: center;
+  padding: 10px;
+  font-size: 150%;
+  justify-content: space-evenly; 
+}
+
+#footer a {
+  padding: 0 10px 0 10px;
+}
+
 /* Styles for portrait tablets, portrait iPad, e-readers, landscape 800x480 phones */
 @media (min-width: 600px) {
   .grid {
