@@ -26,6 +26,7 @@
   - [4.9 Feedback](#49-feedback)
   - [4.10 Feedback Validation](#410-feedback-validation)
   - [4.11 Feedback Summary](#411-feedback-summary)
+  - [4.12 Feedback Email](#411-feedback-email)
 - [5.0 Testing](#50-testing)
   - [5.1 Tests on Various Devices](#51-tests-on-various-devices)
   - [5.2 JSHINT, HTML and CSS](#52-jshint-html-and-css)
@@ -116,6 +117,8 @@ It will include full validation of all the fields in the form
 
 The user will be advised that their message has been sent and what information was sent
 
+The site will send an email to the Site Owner using emailjs.com so that the user is aware the feedback has been submitted
+
 User Stories covered - 4,6,7,8,9,10
 
 ![Wireframes](https://share.balsamiq.com/c/op82QpvADVAN2PJ3MTuwAn.png)
@@ -197,6 +200,12 @@ All fields must pass validation to allow the form to be submitted
 A summary is shown so the user knows what has been submitted
 
 ![Mockup image](/assets/features/feedback_summary.png)
+
+### 4.12 Feedback Email
+
+A email is sent to the site owner so that they are aware that information has been submitted
+
+![Mockup image](/assets/features/feedback_email.png)
 
 ## 5.0 Testing
 
@@ -334,6 +343,7 @@ The website was tested on the these browsers:
 | **Feature** | **Action** | **Result** |
 |-------------|------------|---------------------|
 | Feedback form | Form cannot be submitted until answers have been given in the correct format | all criteria satisfied |
+| Feedback email | email sent to site owner to alert them about the feedback submission | all criteria satisfied |
 
 ## 6.0 Unresolved Bugs
 
@@ -372,3 +382,7 @@ andy-bell.co.uk was used as a css reset
 google fonts and fontspace.com were used as a font resource
 
 seeklogo.com was used for the liverpool fc logo
+
+emailjs.com was used for the email feedback form
+
+Special thanks to my mentor, Mo Shami, for his help and advice
