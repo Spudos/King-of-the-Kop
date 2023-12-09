@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // **** game ****
 // add listener for start button and show game/hide rules when pressed
 document.getElementById('startGameButton').addEventListener('click', function() {
@@ -41,7 +42,7 @@ function handleBlockClick() {
           document.getElementById('message').innerHTML = "<h3>Game over!</h3>";
         } else {
           document.getElementById('message').innerHTML = "<h3>Click where you think they are going to shoot</h3>";
-          };
+          }
       }, 1000);
     } else {
       document.getElementById('message').innerHTML = "<h3>Your team missed!</h3>"; 
@@ -50,7 +51,7 @@ function handleBlockClick() {
           document.getElementById('message').innerHTML = "<h3>Game over!</h3>";
         } else {
           document.getElementById('message').innerHTML = "<h3>Click where you think they are going to shoot</h3>";
-          };  
+          }  
       }, 1000);  
     }
     document.getElementById('pens').textContent = iteration + 1;

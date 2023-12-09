@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // **** Feedback From ****
 // Add focus to the name field on page load
 window.onload = function() {

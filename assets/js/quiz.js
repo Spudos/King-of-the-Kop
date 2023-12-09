@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // **** Quiz ****
 // Add event listener to the start quiz button
 document.getElementById('startGame').addEventListener('click', function() {
