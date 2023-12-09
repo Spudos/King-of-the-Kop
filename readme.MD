@@ -408,6 +408,6 @@ emailjs.com was used for the email feedback form
 
 Special thanks to my mentor, Mo Shami, for his help and advice
 
-### 9.0 PP2 Criteria Checklist
+## 9.0 PP2 Criteria Checklist
 
 [PP2 criteria checklist](https://docs.google.com/spreadsheets/d/1L7anoSV1es7mZ9_QBbMOPKH1VK296K22U-9ktfeY_qg/edit?usp=sharing)
