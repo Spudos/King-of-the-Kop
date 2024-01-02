@@ -137,6 +137,12 @@ displayQuestion(currentQuestionIndex);
 // check answer and show who scored if right or wrong answer given
 answerButtons.forEach(button => {
   button.addEventListener('click', function() {
+
+    // Disable all answer buttons
+      answerButtons.forEach(button => {
+      button.disabled = true;
+    });
+    
     const selectedAnswer = this.textContent;
     const correctAnswer = questions[currentQuestionIndex].answer;
 
@@ -164,6 +170,12 @@ answerButtons.forEach(button => {
       } else {
         document.getElementById('board').textContent = "Final Score";
       }
+
+      // Enable all answer buttons for the next question
+        answerButtons.forEach(button => {
+        button.disabled = false;
+      });
+
       // show try again button and reset game when it is pressed
       if (currentQuestionIndex === questions.length) {
         const tryAgainButton = document.createElement('button');
