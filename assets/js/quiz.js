@@ -81,6 +81,10 @@ const questions = [
 const questionNumber = document.getElementById('questionNumber');
 const questionText = document.getElementById('questionText');
 const answerButtons = document.querySelectorAll('.answer-btn');
+const homeScoreDisplay = document.getElementById('homeScoreDisplay');
+const awayScoreDisplay = document.getElementById('awayScoreDisplay');
+const board = document.getElementById('board');
+const quizContainer = document.querySelector('.quiz-container');
 
 let currentQuestionIndex = 0;
 
@@ -88,49 +92,28 @@ let currentQuestionIndex = 0;
 function displayQuestion(index) {
   questionNumber.textContent = questions[index].questionNumber;
   questionText.textContent = questions[index].question;
-  
+
   for (let i = 0; i < answerButtons.length; i++) {
     answerButtons[i].textContent = questions[index].options[i];
   }
 
-  // Change the image based on the current question
+  const imageSources = [
+    "assets/images/quiz/image1.webp",
+    "assets/images/quiz/image2.webp",
+    "assets/images/quiz/image3.webp",
+    "assets/images/quiz/image4.webp",
+    "assets/images/quiz/image5.webp",
+    "assets/images/quiz/image6.webp",
+    "assets/images/quiz/image7.webp",
+    "assets/images/quiz/image8.webp",
+    "assets/images/quiz/image9.webp",
+    "assets/images/quiz/image10.webp"
+  ];
+
   const imageContainer = document.getElementById('imageContainer');
-  switch (index) {
-    case 0:
-      imageContainer.innerHTML = '<img src="assets/images/quiz/image1.webp" alt="a picture of liverpool celebrating" class="quizpic">';
-      break;
-    case 1:
-      imageContainer.innerHTML = '<img src="assets/images/quiz/image2.webp" alt="a picture of jordan henderson" class="quizpic">';
-      break;
-    case 2:
-      imageContainer.innerHTML = '<img src="assets/images/quiz/image3.webp" alt="a picture of trent alexander-arnold about to take a corner" class="quizpic">';
-      break;
-    case 3:
-      imageContainer.innerHTML = '<img src="assets/images/quiz/image4.webp" alt="a picture of anfield" class="quizpic">';
-      break;
-    case 4:
-      imageContainer.innerHTML = '<img src="assets/images/quiz/image5.webp" alt="a picture of the liverpool and man utd logos" class="quizpic">';
-      break;
-    case 5:
-      imageContainer.innerHTML = '<img src="assets/images/quiz/image6.webp" alt="a picture of liverpool winning the champions leage" class="quizpic">';
-      break;
-    case 6:
-      imageContainer.innerHTML = '<img src="assets/images/quiz/image7.webp" alt="a picture of jamie carragher" class="quizpic">';
-      break;
-    case 7:
-      imageContainer.innerHTML = '<img src="assets/quiz/image8.webp" alt="a picture of the premier league trophy" class="quizpic">';
-      break;
-    case 8:
-      imageContainer.innerHTML = '<img src="assets/images/quiz/image9.webp" alt="a picture of a premnier league table" class="quizpic">';
-      break;
-    case 9:
-      imageContainer.innerHTML = '<img src="assets/images/quiz/image10.webp" alt="a picture of the fa cup" class="quizpic">';
-      break;            
-    default:
-      imageContainer.innerHTML = ''; // Clear the image container if no specific image is needed
-      break;
-  }
+  imageContainer.innerHTML = index < imageSources.length ? `<img src="${imageSources[index]}" alt="Quiz Image" class="quizpic">` : '';
 }
+
 
 displayQuestion(currentQuestionIndex);
 
@@ -147,17 +130,17 @@ answerButtons.forEach(button => {
     const correctAnswer = questions[currentQuestionIndex].answer;
 
     if (selectedAnswer === correctAnswer) {
-      document.getElementById('board').textContent = "Liverpool Score!";
+      board.textContent = "Liverpool Score!";
       setTimeout(function() {
-        document.getElementById('homeScoreDisplay').textContent = homeScore;
-        document.getElementById('board').textContent = "Match Score";
+        homeScoreDisplay.textContent = homeScore;
+        board.textContent = "Match Score";
       }, 2000);
       homeScore++;
     } else {
-      document.getElementById('board').textContent = "Away team score!";
+      board.textContent = "Away team score!";
       setTimeout(function() {
-        document.getElementById('awayScoreDisplay').textContent = awayScore;
-        document.getElementById('board').textContent = "Match Score";
+        awayScoreDisplay.textContent = awayScore;
+        board.textContent = "Match Score";
       }, 2000);
       awayScore++;
     }
@@ -168,7 +151,7 @@ answerButtons.forEach(button => {
       if (currentQuestionIndex < questions.length) {
         displayQuestion(currentQuestionIndex);
       } else {
-        document.getElementById('board').textContent = "Final Score";
+        board.textContent = "Final Score";
       }
 
       // Enable all answer buttons for the next question
@@ -184,13 +167,13 @@ answerButtons.forEach(button => {
           currentQuestionIndex = 0;
           homeScore = 0;
           awayScore = 0;
-          document.getElementById('homeScoreDisplay').textContent = homeScore;
-          document.getElementById('awayScoreDisplay').textContent = awayScore;
+          homeScoreDisplay.textContent = homeScore;
+          awayScoreDisplay.textContent = awayScore;
           displayQuestion(currentQuestionIndex);
 
           tryAgainButton.style.display = 'none';
         });
-        document.querySelector('.quiz-container').appendChild(tryAgainButton);
+        quizContainer.appendChild(tryAgainButton);
       }
     }, 2000);
   });
