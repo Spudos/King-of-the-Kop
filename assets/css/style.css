@@ -181,7 +181,7 @@ form {
   width: 150px;
   height: 80px;
   background-color: green;
-  cursor: url('/assets/game/futbol-solid.svg'), auto;
+  cursor: url('/assets/images/game/futbol-solid.svg'), auto;
 }
 
 #message {

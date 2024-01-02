@@ -1,6 +1,6 @@
 # King of the Kop
 
-![Mockup image](/assets/testing/multi_device.png)
+![Mockup image](/assets/images/images/testing/multi_device.png)
 
 [Live webpage](https://spudos.github.io/King-of-the-Kop/)
 
@@ -154,7 +154,7 @@ Clear instructions are given with a start game button so the user knows what to 
 
 User Stories covered - 1,5,6,7,8
 
-![Mockup image](/assets/features/game_rules.png)
+![Mockup image](/assets/images/features/game_rules.png)
 
 ### 4.4 Game Play
 
@@ -162,7 +162,7 @@ Intuitive design and in game messaging lets the user know what they should do an
 
 User Stories covered - 1,5,6,7,8
 
-![Mockup image](/assets/features/game_live.png)
+![Mockup image](/assets/images/features/game_live.png)
 
 ### 4.5 Game Try Again
 
@@ -170,7 +170,7 @@ A try again button is shown at the end of the game to allow multiple tries
 
 User Stories covered - 1,5,6,7,8
 
-![Mockup image](/assets/features/game_try_again.png)
+![Mockup image](/assets/images/features/game_try_again.png)
 
 ### 4.6 Quiz Instructions
 
@@ -178,7 +178,7 @@ Clear instructions are given with a start quiz button so the user knows what to 
 
 User Stories covered - 2,3,6,7,8
 
-![Mockup image](/assets/features/quiz_rules.png)
+![Mockup image](/assets/images/features/quiz_rules.png)
 
 ### 4.7 Quiz Play
 
@@ -186,7 +186,7 @@ Intuitive design and in quiz messaging lets the user know what they should do an
 
 User Stories covered - 2,3,6,7,8
 
-![Mockup image](/assets/features/quiz_live.png)
+![Mockup image](/assets/images/features/quiz_live.png)
 
 ### 4.8 Quiz Try Again
 
@@ -194,7 +194,7 @@ A try again button is shown at the end of the game to allow multiple tries
 
 User Stories covered - 2,3,6,7,8
 
-![Mockup image](/assets/features/quiz_try_again.png)
+![Mockup image](/assets/images/features/quiz_try_again.png)
 
 ### 4.9 Feedback
 
@@ -202,7 +202,7 @@ A simple feedback form is provided
 
 User Stories covered - 4,6,7,8,9
 
-![Mockup image](/assets/features/feedback_empty.png)
+![Mockup image](/assets/images/features/feedback_empty.png)
 
 ### 4.10 Feedback Validation
 
@@ -210,7 +210,7 @@ All fields must pass validation to allow the form to be submitted
 
 User Stories covered - 4,6,7,8,9
 
-![Mockup image](/assets/features/feedback_validation.png)
+![Mockup image](/assets/images/features/feedback_validation.png)
 
 ### 4.11 Feedback Summary
 
@@ -218,7 +218,7 @@ A summary is shown so the user knows what has been submitted
 
 User Stories covered - 4,6,7,8,9
 
-![Mockup image](/assets/features/feedback_summary.png)
+![Mockup image](/assets/images/features/feedback_summary.png)
 
 ### 4.12 Feedback Email
 
@@ -226,7 +226,7 @@ A email is sent to the site owner so that they are aware that information has be
 
 User Stories covered - 4,6,7,8,9
 
-![Mockup image](/assets/features/feedback_email.png)
+![Mockup image](/assets/images/features/feedback_email.png)
 
 ## 5.0 Testing
 
@@ -248,28 +248,28 @@ The website was checked on
 JSHINT was used to validate the js code
 
 <details><summary>index.html</summary>
-<img src="/assets/testing/game_jshint.png">
+<img src="/assets/images/testing/game_jshint.png">
 </details>
 <details><summary>quiz.html</summary>
-<img src="/assets/testing/quiz_jshint.png">
+<img src="/assets/images/testing/quiz_jshint.png">
 </details>
 <details><summary>feedback.html</summary>
-<img src="/assets/testing/feedback_jshint.png">
+<img src="/assets/images/testing/feedback_jshint.png">
 </details>
 
 The W3C validation service was used to validate the HTML and CSS code with no errors reported
 
 <details><summary>CSS</summary>
-<img src="/assets/testing/css_test.png">
+<img src="/assets/images/testing/css_test.png">
 </details>
 <details><summary>index.html</summary>
-<img src="/assets/testing/game_html_test.png">
+<img src="/assets/images/testing/game_html_test.png">
 </details>
 <details><summary>quiz.html</summary>
-<img src="/assets/testing/quiz_html_test.png">
+<img src="/assets/images/testing/quiz_html_test.png">
 </details>
 <details><summary>feedback.html</summary>
-<img src="/assets/testing/feedback_html_test.png">
+<img src="/assets/images/testing/feedback_html_test.png">
 </details>
 
 ### 5.3 Accessibility
@@ -287,13 +287,13 @@ feedback.html [results](https://wave.webaim.org/report#/https://spudos.github.io
 Chrome lighthouse tools were used to verify that all performance ratings were satisfactory
 
 <details><summary>index.html</summary>
-<img src="/assets/testing/game_lighthouse.png">
+<img src="/assets/images/testing/game_lighthouse.png">
 </details>
 <details><summary>quiz.html</summary>
-<img src="/assets/testing/quiz_lighthouse.png">
+<img src="/assets/images/testing/quiz_lighthouse.png">
 </details>
 <details><summary>feedback.html</summary>
-<img src="/assets/testing/feedback_lighthouse.png">
+<img src="/assets/images/testing/feedback_lighthouse.png">
 </details>
 
 ### 5.5 Browser compatibility
