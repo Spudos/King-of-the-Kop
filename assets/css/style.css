@@ -93,6 +93,10 @@ a {
   text-decoration: underline;
 }
 
+button, label, input {
+  margin: 10px;
+}
+
 #nav {
   background-color: whitesmoke;
   border-radius: 5px;
