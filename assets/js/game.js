@@ -1,32 +1,41 @@
 /*jshint esversion: 6 */
 // **** game ****
-// add listener for start button and show game/hide rules when pressed
-document.getElementById('startGameButton').addEventListener('click', function() {
-document.getElementById('gameContainer').style.display = 'block';
-document.getElementById('instructions').style.display = 'none';
-});
-
 // set required vaiables
+const gameContainer = document.getElementById('gameContainer');
+const instructions = document.getElementById('instructions');
+const startGameButton = document.getElementById('startGameButton');
+const message = document.getElementById('message');
+const homePenaltyDisplay = document.getElementById('homePenaltyDisplay');
+const awayPenaltyDisplay = document.getElementById('awayPenaltyDisplay');
+const pens = document.getElementById('pens');
+const blocks = document.querySelectorAll('.block');
+
 let homePenalty = 0;
 let awayPenalty = 0;
 let iteration = 0;
 
+// add listener for start button and show game/hide rules when pressed
+startGameButton.addEventListener('click', function() {
+gameContainer.style.display = 'block';
+instructions.style.display = 'none';
+});
+
 // on block click comepare with random number to see if matched then process outcome
 function handleBlockClick() {
   // turns of button click listener until it is time for the next go
-  document.querySelectorAll('.block').forEach(block => {
+  blocks.forEach(block => {
     block.removeEventListener('click', handleBlockClick);
   });
   
-  document.getElementById('message').textContent = " ";
+  message.textContent = " ";
     const randomBlock = Math.floor(Math.random() * 4) + 1;
   
   if (parseInt(this.id.slice(-1)) === randomBlock) {
-    document.getElementById('message').innerHTML = "<h3>You saved it!</h3>";
+    message.innerHTML = "<h3>You saved it!</h3>";
   } else {
     awayPenalty++;
-    document.getElementById('awayPenaltyDisplay').textContent = awayPenalty;
-    document.getElementById('message').innerHTML = "<h3>They scored!</h3>"; 
+    awayPenaltyDisplay.textContent = awayPenalty;
+    message.innerHTML = "<h3>They scored!</h3>"; 
   }
 
   // roll random number and compare it to see what outcome is given
@@ -35,31 +44,31 @@ function handleBlockClick() {
     const randomNum = Math.floor(Math.random() * 4) + 1;
     if (randomNum > 1) {
       homePenalty++;
-      document.getElementById('homePenaltyDisplay').textContent = homePenalty;
-      document.getElementById('message').innerHTML = "<h3>Your team scored!</h3>"; 
+      homePenaltyDisplay.textContent = homePenalty;
+      message.innerHTML = "<h3>Your team scored!</h3>"; 
       setTimeout(function() {
         if (iteration > 4) {
-          document.getElementById('message').innerHTML = "<h3>Game over!</h3>";
+          message.innerHTML = "<h3>Game over!</h3>";
         } else {
-          document.getElementById('message').innerHTML = "<h3>Click where you think they are going to shoot</h3>";
+          message.innerHTML = "<h3>Click where you think they are going to shoot</h3>";
           }
       }, 1000);
     } else {
-      document.getElementById('message').innerHTML = "<h3>Your team missed!</h3>"; 
+      message.innerHTML = "<h3>Your team missed!</h3>"; 
       setTimeout(function() {
         if (iteration > 4) {
-          document.getElementById('message').innerHTML = "<h3>Game over!</h3>";
+          message.innerHTML = "<h3>Game over!</h3>";
         } else {
-          document.getElementById('message').innerHTML = "<h3>Click where you think they are going to shoot</h3>";
+          message.innerHTML = "<h3>Click where you think they are going to shoot</h3>";
           }  
       }, 1000);  
     }
-    document.getElementById('pens').textContent = iteration + 1;
+    pens.textContent = iteration + 1;
 
     // iterates to allow a maximum of 5 penalties to be taken the reset the game when try again is pressed
     iteration++;
     if (iteration >= 5) {
-      document.getElementById('message').innerHTML = "<h3>Game over!</h3>";
+      message.innerHTML = "<h3>Game over!</h3>";
       const tryAgainButton = document.createElement('button');
       tryAgainButton.textContent = 'Try Again';
       tryAgainButton.addEventListener('click', function() {
@@ -67,27 +76,27 @@ function handleBlockClick() {
         homePenalty = 0;
         awayPenalty = 0;
         iteration = 0;
-        document.getElementById('homePenaltyDisplay').textContent = homePenalty;
-        document.getElementById('awayPenaltyDisplay').textContent = awayPenalty;
-        document.getElementById('pens').textContent = iteration;
-        document.getElementById('message').innerHTML = "<h3>Click where you think they are going to shoot</h3>";
-        document.querySelectorAll('.block').forEach(block => {
+        homePenaltyDisplay.textContent = homePenalty;
+        awayPenaltyDisplay.textContent = awayPenalty;
+        pens.textContent = iteration;
+        message.innerHTML = "<h3>Click where you think they are going to shoot</h3>";
+        blocks.forEach(block => {
           block.addEventListener('click', handleBlockClick);
         });
         // Hide the try again button
         tryAgainButton.style.display = 'none';
       });
-      document.getElementById('gameContainer').appendChild(tryAgainButton);
+      gameContainer.appendChild(tryAgainButton);
     }
     // adds the listener for the block click
-    document.querySelectorAll('.block').forEach(block => {
+    blocks.forEach(block => {
     block.addEventListener('click', handleBlockClick);
   }); 
   }, 2000);
 }
 
 // adds the listener for the block click
-document.querySelectorAll('.block').forEach(block => {
+blocks.forEach(block => {
   block.addEventListener('click', handleBlockClick);
 });
 
