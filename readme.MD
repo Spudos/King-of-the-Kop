@@ -248,28 +248,29 @@ The website was checked on
 JSHINT was used to validate the js code
 
 <details><summary>index.html</summary>
-<img src="/assets/images/testing/game_jshint.png">
+![game jshint results](/assets/images/testing/game_jshint.png)
 </details>
 <details><summary>quiz.html</summary>
-<img src="/assets/images/testing/quiz_jshint.png">
+![quiz jshint results](/assets/images/testing/quiz_jshint.png)
 </details>
 <details><summary>feedback.html</summary>
-<img src="/assets/images/testing/feedback_jshint.png">
+![feedback jshint results](/assets/images/testing/feedback_jshint.png)
 </details>
 
 The W3C validation service was used to validate the HTML and CSS code with no errors reported
 
 <details><summary>CSS</summary>
-<img src="/assets/images/testing/css_test.png">
+![css test results](/assets/images/testing/css_test.png)
 </details>
 <details><summary>index.html</summary>
-<img src="/assets/images/testing/game_html_test.png">
+![game test results](/assets/images/testing/game_html_test.png)
 </details>
 <details><summary>quiz.html</summary>
-<img src="/assets/images/testing/quiz_html_test.png">
+![quiz test results](/assets/images/testing/quiz_html_test.png)
 </details>
 <details><summary>feedback.html</summary>
-<img src="/assets/images/testing/feedback_html_test.png">
+![feedback test results](/assets/images/testing/feedback_html_test.png)
+
 </details>
 
 ### 5.3 Accessibility
@@ -287,13 +288,13 @@ feedback.html [results](https://wave.webaim.org/report#/https://spudos.github.io
 Chrome lighthouse tools were used to verify that all performance ratings were satisfactory
 
 <details><summary>index.html</summary>
-<img src="/assets/images/testing/game_lighthouse.png">
+![lighthouse results](/assets/images/testing/game_lighthouse.png)
 </details>
 <details><summary>quiz.html</summary>
-<img src="/assets/images/testing/quiz_lighthouse.png">
+![lighthouse results](/assets/images/testing/quiz_lighthouse.png)
 </details>
 <details><summary>feedback.html</summary>
-<img src="/assets/images/testing/feedback_lighthouse.png">
+![lighthouse results](/assets/images/testing/feedback_lighthouse.png)
 </details>
 
 ### 5.5 Browser compatibility
