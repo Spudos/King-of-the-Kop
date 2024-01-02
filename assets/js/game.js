@@ -83,6 +83,10 @@ function handleBlockClick() {
         blocks.forEach(block => {
           block.addEventListener('click', handleBlockClick);
         });
+        // Re-enable pointer events for blocks
+        blocks.forEach(block => {
+          block.style.pointerEvents = 'auto';
+        });
         // Hide the try again button
         tryAgainButton.style.display = 'none';
       });
@@ -93,6 +97,13 @@ function handleBlockClick() {
     block.addEventListener('click', handleBlockClick);
   }); 
   }, 2000);
+
+  if (iteration >= 4) {
+    // Disable pointer events for blocks
+    blocks.forEach(block => {
+      block.style.pointerEvents = 'none';
+    });
+  }
 }
 
 // adds the listener for the block click
