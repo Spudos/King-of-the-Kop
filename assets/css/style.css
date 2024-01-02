@@ -289,18 +289,3 @@ button {
       font-size: x-large;
     }
 }
-
-/* Styles for landscape tablets, landscape iPad, low-resolution laptops and desktops */
-@media (min-width: 801px) {
-
-}
-
-/* Styles for big landscape tablets, laptops, and desktops */
-@media (min-width: 1025px) {
-
- }
-
-/* Styles for high-resolution laptops and desktops */
-@media (min-width: 1281px) {
-
-}
