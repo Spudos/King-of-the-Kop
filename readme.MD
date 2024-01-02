@@ -1,6 +1,6 @@
 # King of the Kop
 
-![Mockup image](/assets/images/images/testing/multi_device.png)
+![Mockup image](/assets/images/testing/multi_device.png)
 
 [Live webpage](https://spudos.github.io/King-of-the-Kop/)
 
@@ -247,28 +247,33 @@ The website was checked on
 
 JSHINT was used to validate the js code
 
-<details><summary>index.html</summary>
+index.html
 ![game jshint results](/assets/images/testing/game_jshint.png)
-</details>
-<details><summary>quiz.html</summary>
+
+quiz.html
+
 ![quiz jshint results](/assets/images/testing/quiz_jshint.png)
-</details>
-<details><summary>feedback.html</summary>
+
+feedback.html
+
 ![feedback jshint results](/assets/images/testing/feedback_jshint.png)
-</details>
 
 The W3C validation service was used to validate the HTML and CSS code with no errors reported
 
-<details><summary>CSS</summary>
+CSS
+
 ![css test results](/assets/images/testing/css_test.png)
-</details>
-<details><summary>index.html</summary>
+
+index.html
+
 ![game test results](/assets/images/testing/game_html_test.png)
-</details>
-<details><summary>quiz.html</summary>
+
+quiz.html
+
 ![quiz test results](/assets/images/testing/quiz_html_test.png)
-</details>
-<details><summary>feedback.html</summary>
+
+feedback.html
+
 ![feedback test results](/assets/images/testing/feedback_html_test.png)
 
 </details>
@@ -287,15 +292,15 @@ feedback.html [results](https://wave.webaim.org/report#/https://spudos.github.io
 
 Chrome lighthouse tools were used to verify that all performance ratings were satisfactory
 
-<details><summary>index.html</summary>
+index.html
+
 ![lighthouse results](/assets/images/testing/game_lighthouse.png)
-</details>
-<details><summary>quiz.html</summary>
+
+quiz.html
 ![lighthouse results](/assets/images/testing/quiz_lighthouse.png)
-</details>
-<details><summary>feedback.html</summary>
+
+feedback.html
 ![lighthouse results](/assets/images/testing/feedback_lighthouse.png)
-</details>
 
 ### 5.5 Browser compatibility
 
